@@ -1,0 +1,78 @@
+<%- include('partials/header'); -%>
+
+
+
+
+
+
+
+<%if (method == 'signup'){%>
+
+
+
+
+  <div class= "text-center form-container">
+
+    <h1 class="signup-H1">Sign Up to Posting-it!</h1>
+
+  <form action="/auth/signup" class="form-signin" method="POST">
+
+
+
+     <input type="text" class="form-control top" name="uName" placeholder="Username" required autofocus>
+
+   <input type="email" class="form-control bottom" name="email" placeholder="E-mail address" required >
+
+   <input type="password" class="form-control middle" name="password" placeholder="Password" required>
+
+    <input type="password" class="form-control middle" name="passwordRetype" placeholder="Confirm Password" required>
+
+    <div class="btn-1">
+  <button type="submit" name="button" class= invisButton value="signup">
+      <a href=""><span>Sign Up</span></a>
+  </button>
+  </div>
+
+  </form>
+
+  </div>
+
+  <p class="if-no-acc">Already have an account?.. <a href="/auth/login" class="signup-link"><strong>Log In</strong></a> </p>
+
+
+
+<%} else if (method == 'login'){%>
+
+
+
+  <div class="text-center form-container">
+
+    <h1 class="sign-logH1">Log-in to start:</h1>
+
+    <form action="/auth/login" class="form-signin" method="POST">
+
+      <input type="text" class="form-control top" name="uNameLogin" placeholder="Username"  autofocus>
+
+      <input type="password" class="form-control middle" name="passwordLogin" placeholder="Password" required>
+
+
+  <div class="btn-1">
+<button type="submit" name="button" class= invisButton value="login">
+    <a href=""><span>Log In</span></a>
+</button>
+</div>
+
+    </form>
+
+  </div>
+<p class="if-no-acc">Or if you don't have an account.. <a href="/auth/signup" class="signup-link"><strong>Sign Up</strong></a> </p>
+<%}%>
+
+
+
+
+
+
+
+
+<%- include('partials/footer'); -%>

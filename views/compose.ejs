@@ -1,0 +1,46 @@
+<%- include('partials/header'); -%>
+
+<% username.forEach(function(post) { %>
+  <h1 class="greeting text-center">Hi, <%= post.uName %>!</h1>
+<%})%>
+
+
+  <h1 class="compose-H1 text-center">Compose your post</h1>
+
+
+
+  <form method="POST" action="/compose" enctype="multipart/form-data" accept="image/*">
+
+  <label class="col-sm-1 col-form-label composeLabel" for=""><p>Upload image:</p></label>
+  <input type="file" name="image" value="" class="uploadFile">
+<button type="submit" name="button">Upload</button>
+  </form>
+
+
+
+<form class="" action="/compose" method="post" >
+
+  <div class="form-group">
+    <label class="col-sm-1 col-form-label composeLabel" for=""><p>Title:</p></label>
+    <input type="text" name="titlePost" class="form-control titlePost" id="titlePost" placeholder="Title" autocomplete="off">
+  </div>
+
+
+
+  <div class="form-groupText">
+    <label class="col-sm-1 col-form-label composeLabel" for=""><p>Text:</p></label>
+    <textarea class="form-control textPost" name="textPost" placeholder="text"></textarea>
+  </div>
+
+
+  <div class="btn-1">
+<button type="submit" name="button" class= invisButton>
+    <a href="/post"><span>Post</span></a>
+</button>
+</div>
+
+</form>
+
+
+
+<%- include('partials/footer'); -%>

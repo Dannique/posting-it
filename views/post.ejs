@@ -1,0 +1,29 @@
+<!-- author: name
+  postings title, text, img. -->
+
+<%- include('partials/header'); -%>
+
+
+
+  <h1>Hi</h1>
+
+
+<% content.forEach(function(post) { %>
+
+    <div class="content text-center">
+
+      <h1>  <%= post.title %>  </h1>
+
+      <p>  <%= post.text %>  </p>
+
+    </div>
+
+  <%  }); %>
+
+
+
+
+
+<img id="output" width="200" />
+
+<%- include('partials/footer'); -%>

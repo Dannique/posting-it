@@ -1,0 +1,299 @@
+body {
+  background-color: #F9F5F2;
+  font-family: 'Nanum Gothic'
+}
+
+h1 {
+  font-family: 'Caveat'
+}
+
+a {
+  color: #000;
+}
+
+a:hover {
+  color: #000;
+}
+
+.invisButton {
+  border: none;
+  background-color: #F9F5F2;
+}
+
+/******************************************************** NAVBAR *********************************************************/
+.navbar-brand {
+  font-size: 3.3rem;
+}
+
+#brand {
+  text-decoration: none;
+  font-family: 'Caveat'
+}
+
+/******************************************************** FOOTER **************************************************************/
+.footer {
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background: grey;
+  position: fixed;
+  opacity: 0.8;
+}
+
+.copyright {
+  padding: 10px;
+  color: #F9F5F2;
+}
+
+/***************************************************** HOME PAGE ************************************************************/
+/* .head-title{
+display: inline-block;
+} */
+.title {
+  font-size: 9rem;
+  position: relative;
+  top: 25px;
+  left: 290px;
+  /* margin: 40px 8px 40px 350px; */
+}
+
+.start-content {
+  width: 500px;
+  position: relative;
+  left: 290px;
+  top: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+.head-paragraph {
+  text-align: left;
+  font-size: 1.5rem;
+  margin-top: 15px;
+}
+
+.btn-home {
+  display: inline-grid;
+  position: relative;
+  top: 100px;
+  left: 200px;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+  color: gray;
+}
+
+.cat-img {
+  position: absolute;
+  right: 40px;
+  bottom: 90px;
+  width: 33%;
+  height: 61%;
+}
+
+.home-container {
+  width: 700px;
+  margin-top: 50px;
+}
+
+/****************************************************** FORM LOGIN ************************************************************/
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+/* .form-signin .checkbox {
+  font-weight: 400;
+} */
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+  margin: 20px auto;
+}
+
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+
+.textcenter {
+  margin: 0;
+  padding: 0;
+}
+
+.form-container {
+  margin: 55px auto 0 auto;
+}
+
+/***************************************************** SIGN UP PAGE *****************************************************/
+.signup-H1 {
+  font-size: 5rem;
+  margin: 80px auto 40px;
+}
+
+/***************************************************** AUTH (PART OF SIGN IN & UP) ***********************************************************/
+.if-no-acc {
+  margin: 62px auto;
+  font-size: 1.5rem;
+}
+
+/***************************************************** BUTTON ********************************************************/
+.btn-1 {
+  width: 300px;
+  height: 20px;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 60px;
+}
+
+.btn-1 a {
+  text-decoration: none;
+  border: 2px solid #010100;
+  padding: 8px 22px;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  /* display: inline-block; */
+  border-radius: 3px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+span {
+  position: relative;
+  /* z-index coz when we put bg to before and after this span text will not be visible */
+  z-index: 3;
+}
+
+.btn-1 a::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -2px;
+  width: calc(100% + 6px);
+  /*100% plus double the times left values*/
+  height: calc(100% - 10px);
+  background-color: #F9F5F2;
+  transition: all 0.5s ease-in-out;
+  transform: scaleY(1);
+}
+
+.btn-1 a:hover::before {
+  transform: scaleY(0);
+}
+
+.btn-1 a::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: -5px;
+  width: calc(100% - 10px);
+  /*100% plus double the times left values*/
+  height: calc(100% + 10px);
+  background-color: #F9F5F2;
+  transition: all 0.5s ease-in-out;
+  transform: scaleX(1);
+}
+
+.btn-1 a:hover::after {
+  transform: scaleX(0);
+}
+
+/************************************************************* WRONG * PAGE *****************************************************/
+.sadpng {
+  padding-bottom: 20px;
+}
+
+.try-again-btn {
+  margin-left: 70px;
+}
+
+.oopsTextH1 {
+  font-size: 6rem;
+  margin: 100px auto 80px;
+}
+
+.oopsTextP {
+  font-size: 2.1rem;
+}
+
+/************************************************************* COMPOSE *****************************************************/
+.compose-H1 {
+  font-size: 7rem;
+  margin: 100px auto;
+}
+
+.form-group {
+  margin-left: 469px;
+  text-align: left;
+}
+
+.form-groupText {
+  position: relative;
+  text-align: left;
+}
+
+.composeLabel {
+  font-weight: bold;
+  padding-right: 20px;
+  width: 120px;
+}
+
+/* .uploadLabel{
+  font-size: 1.7rem;
+} */
+.titlePost {
+  width: 500px;
+}
+
+/****************UPLOAD BUTTOM******/
+.uploadFile::-webkit-file-upload-button {
+  border: 2px solid #6c5ce7;
+  padding: .2em .4em;
+  border-radius: .2em;
+  background-color: #a29bfe;
+  transition: 1s;
+}
+
+.uploadFile::file-selector-button {
+  border: 2px solid #6c5ce7;
+  padding: .2em .4em;
+  border-radius: .2em;
+  background-color: #a29bfe;
+  transition: 1s;
+}
+
+.uploadFile::-webkit-file-upload-button:hover {
+  background-color: #81ecec;
+  border: 2px solid #00cec9;
+}
+
+.uploadFile::file-selector-button:hover {
+  background-color: #81ecec;
+  border: 2px solid #00cec9;
+}
+
+/* .uploadFile{
+  cursor: pointer;
+  width: 90px;
+  height: 38px;
+  color: red;
+  background-color: blue;
+  border-radius: 20px
+
+}
+.uploadFile::-webkit-file-upload-button {
+  visibility: hidden;
+} */
+.textPost {
+  width: 500px;
+}
